@@ -11,9 +11,57 @@
 <header>
   <h1>Mount Caramel Book Club</h1>
   <img src="./public/img.jpg" alt="List of books" width="380">
+  <style>
+    #intro{
+      background-color: crimson;
+    }
+
+    #list{
+      background-color: cadetblue;
+      color:aqua;
+      font-size:20px;
+    }
+     #meet{
+      background-color: firebrick;
+      font-style: italic;
+      
+     }
+    
+     #Review{
+      background-color: aqua;
+      font-size:15px;
+      font-style: italic;
+     }
+    
+     #Opening{
+      background-color: gold;
+      font-size:20px;
+      font-style: italic;
+     }
+
+     #Sellers{
+      background-color: crimson;
+      font-style: italic;
+     }
+
+     #Contact{
+      background-color: firebrick;
+      font-style: italic;
+     }
+
+     #Videos{
+      background-color: cyan;
+     }
+     
+
+    
+      
+    
+  </style>
+  
 </header>
 <!--nav-->
-<nav>
+<nav id="list">
   <ul>
     <li><a href="Index.html">Home</a></li>
     <li><a href="https://dyslexiafoundation.org/books-children-books/" target="_blank">Online Resources</a></li>
@@ -22,24 +70,26 @@
   </ul>
 </nav>
 <!--intro-->
-<div>
+<div id="intro">
+  
   <h2>Welcome to Mount Caramel Book Club</h2>
   <p>The Mount Caramel Book Club is an online community of book readers in Mount Caramel school.</p>
   </div>
-<div>
+
+<div id="meet">
   <h2>Meet our teachers</h2>
   <h3>Ms. Emma</h3>
   <p>She teaches elementary school kids. She has a bachelor's degree in Elementary education</p>
   <h3>Ms. Caroline</h3>
   <p>She teaches secondary school and high school kids. She has a Master's of Arts..</p>
   </div>
-<div>
+<div id="Review">
   <h2>Book Review</h2>
   <h3>Alice in the Wonderland</h3>
   <strong>Amit: </strong><q>I loved reading this book. A must read for everyone.</q>
   <p><strong>Sekhar: </strong><q>I really enjoyed reading this book</q></p>
 </div>
-<div>
+<div id="Videos">
   <h2>Related Videos</h2>
   <video width="480" height="360" controls autoplay>
     <source src="public/video.mp4" type="video/mp4">
@@ -49,7 +99,7 @@
   <iframe width="480" height="360" src="https://www.youtube.com/embed/wcWLKRXgjsw"
     title="YouTube video player"></iframe>
 </div>
-<div>
+<div id="Opening">
   <h2>Opening Timings:</h2>
   <table>
     <tr>
@@ -86,7 +136,7 @@
   
 <!--Best Seller Section-->
   <h3>Best Sellers</h3>
-  <div>
+  <div id="Sellers">
   <ul>
     <li><em>Charlie and The Chocolate Factory:</em> by <em>Roald Dahl</em></li>
     <li><em>The Cat in the Hat:</em> by <em>Dr. Seuss</em></li>
@@ -95,7 +145,7 @@
   </ul>
 </div>
 <div>
-  <footer>
+  <footer id="Contact">
   <h2>Contact Us Mrs. Caroline</h2>
   <p>Phone No: +1124533</p>
   <address>36th Main, Palm Street, Delhi-36035</address>
