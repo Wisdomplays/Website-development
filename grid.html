@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <style>
+    .grid_item1 {
+    grid-area: header ;
+    }
+    .grid_item2  {
+    grid-area: menu;
+    }
+    .grid_item3 {
+    grid-area: main;
+    }
+    .grid_item4 {
+    grid-area: footer;
+    }
+
+    .grid_container  {
+    display:grid;
+    grid-template-columns:auto auto auto auto ;
+    grid-template-areas:'header header header header'
+    'menu main main main'
+    'menu footer footer footer';     
+    background-color:rgb(45, 10, 240); 
+    padding: 20px;            
+    }
+    .grid_container div  {
+    background-color:rgb(20, 19, 109);
+    text-align:left;
+    padding:40px ;
+    border:3px solid rgb(10, 10, 10) ;
+    }
+
+   </style>     
+    </head>
+    <body>
+<div class="grid_container">
+    <div class="grid_item1">Header   </div>
+    <div class="grid_item2">Menu</div>
+    <div class="grid_item3">Main </div>
+    <div class="grid_item4">Footer </div>
+</div>
+
+
+    </body>
+</html>
