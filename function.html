@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Function Example</title>
+</head>
+
+<body>
+    <h2>Welcome to the world of Javascript</h2>
+
+    <script>
+        //Function to fluid to sum of two numbers
+        function sumofTwoNumbers() {
+            let x, y, z;
+
+            x= 5;
+            y= 6;
+            z= x + y;
+
+            return z;
+        }
+
+        //Calling the sum of function 
+            let sum= sumofTwoNumbers();
+
+            //Displaying the sum in cosnsole
+            console.log("The sum of x and y is " + sum);
+
+            //Function to check odd or even
+            let oddorEven = function (number) {
+                if (number % 2 == 0)
+                document.write(number + " is an even number");
+             else 
+                document.write(number + " is an odd number ");
+            };
+
+            //talking user input
+            let number = prompt("Enter the number:");
+
+            //Calling odd or even function
+            oddorEven(number);
+    </script>
+</body>
+</html>
