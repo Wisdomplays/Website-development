@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>My hobbies</title>
+
+        <style>
+            .hobbies {
+               background-color: aqua;
+               text-decoration:underline;
+               font-family: cursive;
+            }
+
+            .button-class {
+                background-color: crimson;
+                font-family: cursive;
+                text-decoration: wavy;
+                text-align: center;
+                 color:gold;
+            }
+
+            
+
+        
+                
+            
+        </style>
+    </head>
+
+    <body>
+
+        <h1 class="hobbies">Hobbies page</h1>
+
+        <button onclick="showHobbies()" class="button-class">Click me</button>
+
+        <p id="demo"></p>
+
+        <script>
+           /* window.onload = function () {
+                alert("The page has loaded");
+            }; */
+            
+            function showHobbies() {
+                document.getElementById("demo").innerHtml = 
+                      "Hobbies: Playing Football, Talking";
+            }
+        </script>
+    </body>
+</html>
