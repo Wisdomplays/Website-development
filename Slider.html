@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <style> 
+        .slide {
+            width:300px;
+            height: 300px;
+        }
+
+    </style>
+
+    <body>
+
+        <img class="slide" src="Messi.webp" alt="Videos not loaded">
+        <img class="slide" src="Neymar.webp" alt="Image not loaded">
+        <img class="slide" src="images.webp" alt=" Image not loaded">
+        <img class="slide" src="Untitled.jpg" alt="Image not loaded">
+        <img class="slide" src="Lame.jpg" alt="Image not loaded">
+        
+
+        <script>
+            let current = 0;
+            let slides= document.getElementsByClassName("slide")
+
+            function showSlides() {
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display= "none";
+            }
+
+                slides[current].style.display= "block";
+            
+
+                current++;
+
+                if (current >=slides.length) {
+                    current = 0;
+                }
+
+                setTimeout(showSlides, 3000);
+        }
+         showSlides();
+        </script>
+    </body>
+</html>
